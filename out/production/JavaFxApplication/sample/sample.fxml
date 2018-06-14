@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="root" stylesheets="sample/css/css.css" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+
+    <children>
+      <Label layoutX="229.0" layoutY="21.0" text="Password Checker">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <PasswordField fx:id="passwordField" layoutX="226.0" layoutY="167.0" onAction="#submit" />
+      <Button layoutX="274.0" layoutY="209.0" mnemonicParsing="false" onAction="#submit" text="Check!" />
+      <Label layoutX="363.0" layoutY="358.0" text="Designed and developed by Hamish Dickson" />
+      <ImageView cache="true" fitHeight="90.0" fitWidth="180.0" layoutX="14.0" layoutY="297.0" pickOnBounds="true">
+         <image>
+            <Image url="file:media/FVC.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="402.0" layoutY="378.0" text="Hamishdickson98@gmail.com" />
+   </children>
+</AnchorPane>
