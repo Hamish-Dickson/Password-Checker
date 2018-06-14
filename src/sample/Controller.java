@@ -19,7 +19,6 @@ public class Controller {
     }
 
     private void checkPassword() {
-        int pWordCount = 0;
         try {
             String dir = System.getProperty("user.dir");
             File f = new File(dir + "/data.txt");
@@ -36,7 +35,6 @@ public class Controller {
                     alert.show();
                     break;
                 }
-                pWordCount++;
             }
             if (readLine == null) {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION, "Well done, your password is safe. for now...");
@@ -44,7 +42,6 @@ public class Controller {
                 alert.setHeaderText("Password is safe");
                 alert.show();
             }
-            System.out.println(pWordCount);
         } catch (IOException e) {
             e.printStackTrace();
         }
